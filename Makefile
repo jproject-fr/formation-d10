@@ -87,3 +87,35 @@ logs:
 # https://stackoverflow.com/a/6273809/1826109
 %:
 	@:
+
+##########################################################################
+##    Specific to project
+##########################################################################
+
+BLACK        := $(shell tput -Txterm setaf 0)
+RED          := $(shell tput -Txterm setaf 1)
+GREEN        := $(shell tput -Txterm setaf 2)
+YELLOW       := $(shell tput -Txterm setaf 3)
+LIGHTPURPLE  := $(shell tput -Txterm setaf 4)
+PURPLE       := $(shell tput -Txterm setaf 5)
+BLUE         := $(shell tput -Txterm setaf 6)
+WHITE        := $(shell tput -Txterm setaf 7)
+
+RESET := $(shell tput -Txterm sgr0)
+
+# Shortcut for Drush command inside the container (this allows to handle --parameter with no errors).
+DRUSHCOMMAND := docker exec $(shell docker ps --filter name='^/$(PROJECT_NAME)_php' --format "{{ .ID }}") drush -r $(DRUPAL_ROOT)
+
+## update	:	Executes some drush commands to update the database.
+.PHONY: update
+update: backup-db
+	@echo "${BLUE}Run composer install ...${RESET}"
+	make composer install
+	@echo "${BLUE}Run Update DB hooks - Drush updb ...${RESET}"
+	make drush updb
+	@echo "${BLUE}Clear cache - Drush cr BEFORE cim ...${RESET}"
+	make drush cr
+	@echo "${BLUE}Import config - Drush cim ...${RESET}"
+	make drush cim
+	@echo "${BLUE}Clear cache - Drush cr AFTER cim ...${RESET}"
+	make drush cr
