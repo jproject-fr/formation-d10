@@ -1,0 +1,22 @@
+uuid: acc3b5c7-7408-483e-b5e8-c24fc2578152
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - resto
+_core:
+  default_config_hash: AUdprqdbIw1MY55WKQmJxnHPaSsGtTNXmS2dmL_KFco
+id: resto_content
+theme: resto
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

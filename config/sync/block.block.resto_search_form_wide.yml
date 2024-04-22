@@ -1,0 +1,23 @@
+uuid: f9c0c0fa-fbc8-4e93-aeaa-f3e0b2984067
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - resto
+_core:
+  default_config_hash: YN5J1tIdiNNo7C2IS7CednOUpcMqq_F-IT0PHMMM7-I
+id: resto_search_form_wide
+theme: resto
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

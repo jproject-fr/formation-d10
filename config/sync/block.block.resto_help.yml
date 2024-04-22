@@ -1,0 +1,22 @@
+uuid: 4c85a70f-7f31-413c-9eca-16f53d141c58
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - resto
+_core:
+  default_config_hash: xElHYdL6rClDeG7PN3u-sjvQ64QyDLt_XNScM0tHkAo
+id: resto_help
+theme: resto
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

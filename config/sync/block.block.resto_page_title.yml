@@ -1,0 +1,20 @@
+uuid: 9c1716fe-e7c9-4134-8a4a-2bf6dac8c1da
+langcode: en
+status: true
+dependencies:
+  theme:
+    - resto
+_core:
+  default_config_hash: '-vdxmyF9pYgsnWtX0lwpITjJgfdrP_x6T65b-hT2FLg'
+id: resto_page_title
+theme: resto
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

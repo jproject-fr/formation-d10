@@ -1,0 +1,22 @@
+uuid: fc5dd40b-7682-41ee-a446-d04bb6914570
+langcode: en
+status: true
+dependencies:
+  theme:
+    - resto
+_core:
+  default_config_hash: SfiAuOm4xu64DrAGJJVifozpV1_lTcn6Z25CagJuenU
+id: resto_primary_local_tasks
+theme: resto
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

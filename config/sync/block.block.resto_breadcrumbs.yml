@@ -1,0 +1,22 @@
+uuid: 6eb1b85d-2bd8-49ea-902b-ae1a9e2afb98
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - resto
+_core:
+  default_config_hash: d5RRR4sCguf9KoTb2urPQWdaepVzH5Vh3o0jIKsdkyg
+id: resto_breadcrumbs
+theme: resto
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

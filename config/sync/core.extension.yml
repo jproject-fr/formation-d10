@@ -41,6 +41,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  restaurant: 0
   search: 0
   serialization: 0
   shortcut: 0
@@ -60,4 +61,6 @@ theme:
   olivero: 0
   claro: 0
   gin: 0
+  bootstrap_barrio: 0
+  resto: 0
 profile: standard

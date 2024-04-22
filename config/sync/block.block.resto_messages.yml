@@ -1,0 +1,22 @@
+uuid: 20fbc113-5739-4cd2-b4ce-122ea77e916d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - resto
+_core:
+  default_config_hash: XGNCwTVqw0Frv1VFUGohlocMSXDpPcOaiH8D-xHYit4
+id: resto_messages
+theme: resto
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

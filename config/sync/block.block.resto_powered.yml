@@ -1,0 +1,22 @@
+uuid: d1d2692f-8ebe-4c97-b986-64c77204e5df
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - resto
+_core:
+  default_config_hash: cBMF1Yr7bqVVP-72Z0F4GxUPfomi9E1IU-NU_uec1ME
+id: resto_powered
+theme: resto
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
