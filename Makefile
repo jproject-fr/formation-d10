@@ -108,7 +108,7 @@ DRUSHCOMMAND := docker exec $(shell docker ps --filter name='^/$(PROJECT_NAME)_p
 
 ## update	:	Executes some drush commands to update the database.
 .PHONY: update
-update: backup-db
+update:
 	@echo "${BLUE}Run composer install ...${RESET}"
 	make composer install
 	@echo "${BLUE}Run Update DB hooks - Drush updb ...${RESET}"
