@@ -1,0 +1,22 @@
+uuid: 8229e5fa-bd79-44f4-a7a0-f5b14e50d5c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: plat
+label: Plat
+type: 'canonical_entities:node'
+pattern: 'plats/[node:title]'
+selection_criteria:
+  79099408-d622-4088-9c6f-281bb29c79e0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 79099408-d622-4088-9c6f-281bb29c79e0
+    context_mapping:
+      node: node
+    bundles:
+      dish: dish
+selection_logic: and
+weight: -5
+relationships: {  }

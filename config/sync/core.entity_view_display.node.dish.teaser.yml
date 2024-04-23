@@ -1,0 +1,36 @@
+uuid: e2d738a1-0e15-49b9-9c75-1b2d763526ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dish.body
+    - field.field.node.dish.field_category
+    - field.field.node.dish.field_photo
+    - field.field.node.dish.field_price
+    - node.type.dish
+  module:
+    - text
+    - user
+id: node.dish.teaser
+targetEntityType: node
+bundle: dish
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  field_photo: true
+  field_price: true

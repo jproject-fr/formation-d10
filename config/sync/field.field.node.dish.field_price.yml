@@ -1,0 +1,23 @@
+uuid: 49f99f38-9ed4-40f7-b1f4-4479ead9b1bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.dish
+id: node.dish.field_price
+field_name: field_price
+entity_type: node
+bundle: dish
+label: Prix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

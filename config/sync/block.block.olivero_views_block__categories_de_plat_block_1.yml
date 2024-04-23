@@ -1,0 +1,24 @@
+uuid: cdfcf795-0893-4a4a-aa6d-5fda07725d9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories_de_plat
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__categories_de_plat_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:categories_de_plat-block_1'
+settings:
+  id: 'views_block:categories_de_plat-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

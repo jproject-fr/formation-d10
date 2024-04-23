@@ -1,0 +1,18 @@
+uuid: 38eb820d-6230-4b96-a8a6-9e715d8ed544
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Plat
+type: dish
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,8 @@
+uuid: 848f488d-a89b-482c-b693-5a3b4644ccef
+langcode: en
+status: true
+dependencies: {  }
+name: 'Catégorie de plat'
+vid: categorie_de_plat
+description: ''
+weight: 0

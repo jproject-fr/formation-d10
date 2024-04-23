@@ -1,0 +1,29 @@
+uuid: e547b568-d41a-4f0b-80e9-7bd74500a53c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.dish
+    - taxonomy.vocabulary.categorie_de_plat
+id: node.dish.field_category
+field_name: field_category
+entity_type: node
+bundle: dish
+label: Catégorie
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorie_de_plat: categorie_de_plat
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

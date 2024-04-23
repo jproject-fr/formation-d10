@@ -1,0 +1,18 @@
+uuid: 4b84093d-8ca9-4456-8a49-cc97111a1b04
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dish
+id: node.dish.title
+field_name: title
+entity_type: node
+bundle: dish
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: 376c3192-e370-4c25-8676-d32a6ad2b07b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.dish
+  module:
+    - text
+id: node.dish.body
+field_name: body
+entity_type: node
+bundle: dish
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
