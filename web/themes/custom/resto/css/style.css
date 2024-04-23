@@ -2,3 +2,7 @@
  * @file
  * Subtheme specific CSS.
  */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
